@@ -1,4 +1,5 @@
 require 'rack/protection'
+#require 'sinatra/base'
 
 use Rack::Session::Cookie, :secret => ENV['secret']
 use Rack::Protection

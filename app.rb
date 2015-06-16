@@ -1,4 +1,5 @@
-require 'sinatra'
+#require 'sinatra'
+require 'sinatra/activerecord'
 require 'bundler/setup'
 
 class Tasklist < Sinatra::Application

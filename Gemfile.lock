@@ -25,6 +25,7 @@ GEM
       rack
     rack_csrf (2.5.0)
       rack (>= 1.1.0)
+    rake (10.4.2)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -45,6 +46,7 @@ DEPENDENCIES
   mysql2
   rack-protection
   rack_csrf
+  rake
   sinatra
   sinatra-activerecord
 
