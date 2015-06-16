@@ -1,0 +1,7 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all tempfiles.
+/tmp
+
+.rbenv-vars
