@@ -98,9 +98,6 @@ The Sinatra app needs certain configuration settings that are sensitive, such as
 # make sure you are in the correct directory
 cd ~/sites/warpspeed-sinatra.dev
 
-# if you need a new secret key, you can use rake to get a new random key
-rake secret
-
 # create the file for the environment variables
 sudo nano .rbenv-vars
 
@@ -125,7 +122,6 @@ cd ~/sites/warpspeed-sinatra.dev
 
 # migrate the data into the database
 rake db:migrate
-
 ```
 
 If the schema is not loaded successfully, it is likely that you have not configured your environment with your database credentials. Please see the "Configure your App Settings" section above for details.
@@ -151,7 +147,6 @@ Now, whenever you access "warpspeed-sinatra.dev" in your web browser, you will b
 ## Restart your Site and Celebrate
 
 Finally, we need to reload the site configuration to make all of the changes we made take effect. Perform the following:
-
 ```
 # RUN THESE COMMANDS IN YOUR VM
 
@@ -170,9 +165,6 @@ If you have issues and need to troubleshoot, you should view the Nginx log file 
 
 # to view the Nginx log file
 sudo nano /var/log/nginx/error.log
-
-# to view the Rails log file
-sudo nano ~/sites/warpspeed-sinatra.dev/log/production.log
 ```
 
 # License
