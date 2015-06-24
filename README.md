@@ -158,7 +158,7 @@ Now, you can access http://warpspeed-sinatra.dev on your machine to view the sit
 
 ## Troubleshooting
 
-If you have issues and need to troubleshoot, you should view the Nginx log file or the Rails logs for clues. To do so, perform the following:
+If you have issues and need to troubleshoot, you should view the Nginx log file for clues. To do so, perform the following:
 
 ```
 # RUN THESE COMMANDS IN YOUR VM
