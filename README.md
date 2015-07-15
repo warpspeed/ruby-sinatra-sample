@@ -105,7 +105,7 @@ cd ~/sites/warpspeed-sinatra.dev
 sudo nano .rbenv-vars
 
 # add the following lines
-DATABASE_URL=mysql2://tasks_user:password123@localhost/tasks_db
+DATABASE_URL=mysql://tasks_user:password123@localhost/tasks_db
 secret=YOUR_SECRET_KEY
 
 # save and exit
@@ -115,19 +115,7 @@ Now all of your application's environment variables will be available so you can
 
 ## Run Migrations
 
-We need to create the required tables in the database. To run the migration, perform the following:
-
-```
-# RUN THESE COMMANDS IN YOUR VM
-
-# make sure you are in the proper site directory
-cd ~/sites/warpspeed-sinatra.dev
-
-# migrate the data into the database
-rake db:migrate
-```
-
-If the schema is not loaded successfully, it is likely that you have not configured your environment with your database credentials. Please see the "Configure your App Settings" section above for details.
+Migrations are taken care of by DataMapper everytime warpspeed reloads the site.
 
 ## Add a Hosts File Entry
 
