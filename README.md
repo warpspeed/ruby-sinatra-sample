@@ -106,7 +106,7 @@ sudo nano .rbenv-vars
 
 # add the following lines
 DATABASE_URL=mysql://tasks_user:password123@localhost/tasks_db
-secret=YOUR_SECRET_KEY
+SECRET_KEY=YOUR_SECRET_KEY
 
 # save and exit
 ```
