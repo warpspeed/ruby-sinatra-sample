@@ -1,5 +1,8 @@
-require 'sinatra/activerecord'
-#require 'active_record'
+require 'data_mapper'
 
-class Task < ActiveRecord::Base
+class Task
+  include DataMapper::Resource
+  property :id, Serial
+  property :name, String
+  property :is_complete, Boolean
 end

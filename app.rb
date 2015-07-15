@@ -1,14 +1,8 @@
-#require 'sinatra'
-require 'sinatra/activerecord'
-require 'bundler/setup'
+require 'data_mapper'
 
-class Tasklist < Sinatra::Application
-
-  configure :production do
-    set :clean_trace, true
-  end
-
-end
-
-require_relative 'models/task.rb'
 require_relative 'routes/main.rb'
+require_relative 'models/task.rb'
+
+DataMapper.setup(:default, ENV['DATABASE_URL'])
+Task.auto_upgrade!
+DataMapper.finalize
