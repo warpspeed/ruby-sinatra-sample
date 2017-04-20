@@ -1,8 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.8)
-    bcrypt (3.1.10)
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
+    bcrypt (3.1.11)
     bcrypt-ruby (3.1.5)
       bcrypt (>= 3.1.3)
     data_mapper (1.2.0)
@@ -15,7 +16,7 @@ GEM
       dm-transactions (~> 1.2.0)
       dm-types (~> 1.2.0)
       dm-validations (~> 1.2.0)
-    data_objects (0.10.16)
+    data_objects (0.10.17)
       addressable (~> 2.1)
     dm-aggregates (1.2.0)
       dm-core (~> 1.2.0)
@@ -51,24 +52,25 @@ GEM
       uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
-    do_mysql (0.10.16)
-      data_objects (= 0.10.16)
+    do_mysql (0.10.17)
+      data_objects (= 0.10.17)
     fastercsv (1.5.5)
-    json (1.8.3)
-    json_pure (1.8.2)
-    multi_json (1.11.2)
-    mysql (2.9.1)
-    rack (1.6.4)
+    json (1.8.6)
+    json_pure (1.8.6)
+    multi_json (1.12.1)
+    mysql2 (0.4.5)
+    public_suffix (2.0.5)
+    rack (1.6.5)
     rack-protection (1.5.3)
       rack
-    rack_csrf (2.5.0)
+    rack_csrf (2.6.0)
       rack (>= 1.1.0)
-    sinatra (1.4.6)
-      rack (~> 1.4)
+    sinatra (1.4.8)
+      rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     stringex (1.5.1)
-    tilt (2.0.1)
+    tilt (2.0.7)
     uuidtools (2.1.5)
 
 PLATFORMS
@@ -77,10 +79,10 @@ PLATFORMS
 DEPENDENCIES
   data_mapper
   dm-mysql-adapter
-  mysql
+  mysql2
   rack-protection
   rack_csrf
   sinatra
 
 BUNDLED WITH
-   1.10.5
+   1.14.6

@@ -82,14 +82,14 @@ To install ruby and gemfiles, perform the following:
 # make sure you are in the home directory
 cd ~/
 
-# install ruby 2.1.4
-rbenv install 2.1.4
+# install ruby 2.4.1
+rbenv install 2.4.1
 
 # make sure you are in your project directory
 cd ~/sites/warpspeed-sinatra.dev
 
-# set the local ruby version to 2.1.4
-rbenv local 2.1.4
+# set the local ruby version to 2.4.1
+rbenv local 2.4.1
 
 # use the bundler to install gemfiles
 bundle install
@@ -130,6 +130,12 @@ To access your new Sinatra site, you will need to add an entry to the hosts file
 
 # open a terminal and run the following command (for Mac)
 sudo nano /etc/hosts
+
+# using git bash or similar, must be run as admin (windows)
+notepad /c/Windows/System32/Drivers/etc/hosts
+
+# using command prompt, must be run as admin (windows)
+notepad C:\Windows\System32\Drivers\etc\hosts
 
 # add a line that looks like this to the end of the file
 192.168.88.10  warpspeed-sinatra.dev
