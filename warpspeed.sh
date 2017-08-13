@@ -1,7 +1,7 @@
 # warpspeed.sh
 # Commands here will be run each time a pull or push deploy is successfully run.
 
-RUBY_VERSION=2.1.4
+RUBY_VERSION=2.4.1
 
 # Make sure the correct ruby version is installed.
 if [ ! -d "$HOME/.rbenv/versions/$RUBY_VERSION" ]; then
