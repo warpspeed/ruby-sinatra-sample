@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'mysql'
+gem 'mysql2'
 gem 'data_mapper'
 gem 'dm-mysql-adapter'
 gem 'rack-protection'
